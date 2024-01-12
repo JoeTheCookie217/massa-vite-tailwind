@@ -18,11 +18,12 @@ function App() {
     }, []);
 
     return (
-        <>
-            <button onClick={getAddress}>Get Address</button>
-            <div>{account?.address}</div>
-            <div className="bg-red-500">TEST</div>
-        </>
+        <div className="h-full w-full grid place-items-center bg-gray-900 text-white">
+            <div>
+                <button onClick={getAddress}>Get Address</button>
+                <div>{account?.address}</div>
+            </div>
+        </div>
     );
 }
 
